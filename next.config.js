@@ -1,10 +1,13 @@
+// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: "export",
   distDir: 'dist',
-  images:{
-  unoptimized:true,
+  images: {
+    unoptimized: true,
   },
-  };
-  
-  module.exports = nextConfig
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  // Use "output: export" configuration
+  output: 'export',
+};
+
+module.exports = nextConfig;
