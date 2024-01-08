@@ -1,11 +1,10 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  // output: "export",
   distDir: 'dist',
-  images: {
-    unoptimized: true,
+  images:{
+  unoptimized:true,
   },
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-};
-
-module.exports = nextConfig;
+  out: 'build',
+  };
+  module.exports = nextConfig
